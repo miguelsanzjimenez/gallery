@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Miguel Sanz Jiménez - Gallery</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            color: black;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(212, 241, 253);
+            height: 100vh;
+            text-align: center;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            margin: 5px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-photos-top-container {
+            margin: 15px;
+        }
+
+        .about-photos {
+            max-width: 70%;
+            min-width: 300px;
+        }
+
+        .about-img {
+width: 300px;
+            
+        }
+
+        .btn {
+            margin-bottom: 50px;
+        }
+
+
+
+
+        /*footer*/
+        .footer-icon {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 20px;
+        }
+
+        .nav-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="https://miguelsanzjimenez.github.io/home/">Miguel Sanz Jiménez</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/home/">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/about/">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/translations/">Translations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/media/">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/education/">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://miguelsanzjimenez.github.io/gallery/">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://miguelsanzjimenez.github.io/contact/">Contact</a>
+                </li>
+            </ul>
+            </form>
+        </div>
+    </nav>
+
+    <section id="gallery">
+        <div class="gallery-container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Gallery</h1>
+            <div class="about about-photos">
+                <div class="about-photos-top-container">
+
+                    <img class="about-img" src="about-img-1.JPG" alt="about-1">
+
+
+                </div>
+
+                <p class="gallery-text">Dr. Sanz Jiménez discusses his research at the University of Málaga</p>
+                <div class="btn-container">
+                    <button class="gallery-btn prev btn btn-primary">Previous</button>
+                    <button class="gallery-btn next btn btn-primary">Next</button>
+                </div>
+                <p class="footer-text">Copyright &#169; <span class="year">2002</span> | Miguel Sanz Jiménez</p>
+                <img class="footer-icon" src="favicon.ico" alt="icon">
+            </div>
+
+    </section>
+
+    <script>
+        const aboutImg = document.querySelector('.about-img');
+        const galleryText = document.querySelector('.gallery-text');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        const galleryImages = [
+            {
+                image: 'about-img-1.JPG',
+                text: 'Dr. Sanz Jiménez discusses his research at the University of Málaga'
+            },
+            {
+                image: 'about-image-2.png',
+                text: "At Madrid's Feria del Libro, Dr. Sanz Jiménez signs his books"
+
+            },
+            {
+                image: 'about-image-3.png',
+                text: 'Dr. Sanz Jiménez meets American writer Paul Auster'
+            },
+            {
+                image: 'about-img-4.jpg',
+                text: 'Dr. Sanz Jiménez in Belfast'
+            }
+        ];
+
+        let currentItem = 0;
+
+        function displayImage() {
+            let item = galleryImages[currentItem];
+
+            aboutImg.src = item.image;
+            galleryText.innerHTML = item.text;
+        }
+
+        prevBtn.addEventListener('click', function () {
+            currentItem--;
+            if (currentItem < 0) {
+                currentItem = galleryImages.length - 1;
+            }
+            displayImage()
+        })
+
+        nextBtn.addEventListener('click', function () {
+            currentItem++;
+            if (currentItem > galleryImages.length - 1) {
+                currentItem = 0;
+            }
+            displayImage()
+        })
+
+        const year = document.querySelector('.year');
+        const currentYear = new Date().getFullYear();
+
+        year.innerHTML = currentYear;
+    </script>
+
+</body>
+
+</html>
