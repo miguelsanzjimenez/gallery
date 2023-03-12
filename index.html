@@ -56,7 +56,7 @@
         }
 
         .about-img {
-width: 300px;
+            width: 300px;
             margin-bottom: 15px;
         }
 
@@ -127,9 +127,10 @@ width: 300px;
             <br>
             <h1>Gallery</h1>
             <div class="about about-photos">
-                <img class="about-img" src="antolin.jpg" alt="antolin">
+                <img class="about-img" src="whitehead.jpg" alt="whitehead">
 
-                <p class="gallery-text">Dr. Sanz Jiménez attends a lecture by Spanish translator Mariano Antolín Rato</p>
+                <p class="gallery-text">Dr. Sanz Jiménez meets Pulitzer-prize winner Colson Whitehead
+                </p>
                 <div class="btn-container">
                     <button class="gallery-btn prev btn btn-primary">Previous</button>
                     <button class="gallery-btn next btn btn-primary">Next</button>
@@ -147,7 +148,15 @@ width: 300px;
         const nextBtn = document.querySelector('.next');
 
         const galleryImages = [
-        {
+            {
+                image: 'whitehead.jpg',
+                text: 'Dr. Sanz Jiménez meets Pulitzer-prize winner Colson Whitehead'
+            },
+            {
+                image: 'alcala.jpeg',
+                text: 'Dr. Sanz Jiménez sharing his research at Alcalá University'
+            },
+            {
                 image: 'antolin.jpg',
                 text: 'Dr. Sanz Jiménez attends a lecture by Spanish translator Mariano Antolín Rato'
             },
